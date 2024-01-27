@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+}
+
+
+/* card 1 css */
+.card1{
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(209, 52, 52);
+  min-height:fit-content;
+  width: 300px;
+  border-radius: 5px;
+}
+.card1 .uname{
+  background-color: #212529;
+  color: white;
+  padding:5px 0 5px 10px;
+  text-align: left;
+  
+}
+.card1 .title{
+  color: rgb(22, 22, 22);
+}
+
+.card1 .image img{
+  width: 250px;
+  height: 180px;
+  border-radius: 50%;
+}
+.card1 .desc{
+  padding: 15px 10px 25px 10px;
+}
+.card1 Button{
+  color:white;
+  background-color:rgb(22, 22, 22);
+}
+
+/* card 2 css */
+.card2{
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(47, 198, 118);
+  min-height:fit-content;
+  width: 300px;
+  border-radius: 5px;
+}
+.card2 .uname{
+  background-color: #212529;
+  color: white;
+  padding:5px 0 5px 10px;
+  text-align: left;
+}
+.card2 .title{
+  color: rgb(22, 22, 22);
+}
+
+.card2 .image img{
+  height: 180px;
+}
+.card2 .desc{
+  padding: 15px 10px 25px 10px;
+  font-style: italic;
+}
+.card2 Button{
+  color:white;
+  background-color:rgb(22, 22, 22);
+}
+
+/* card3 css */
+.card3{
+  text-align: center;
+  border: 2px solid black;
+  background-color: rgb(58, 65, 135);
+  min-height:fit-content;
+  width: 300px;
+  color: white;
+  border-radius: 5px;
+}
+.card3 .uname{
+  background-color: #212529;
+  color: white;
+  padding:5px 0 5px 10px;
+  text-align: left;
+}
+.card3 .title{
+  color: rgb(22, 22, 22);
+  color: white;
+}
+
+.card3 .image img{
+  height: 180px;
+  border-radius: 10px;
+}
+.card3 .desc{
+  padding: 15px 10px 25px 10px;
+  font-style:normal;
+}
+.card3 Button{
+  color:white;
+  background-color:rgb(22, 22, 22);
+}
+
+.cardFooter1, .cardFooter2, .cardFooter3{
+  background-color: #212529;
+  color: white;
+  padding:5px 0 5px 10px;
+  text-align: left;
+    
+}
+.globalcard,.selftGlobalCard,.swap-request{
+  background-color: #dce1e9;
+  min-height: 100vh;
+}
+.like_dislike img{
+  height: 22px;
+  width: 22x;
+  margin-right: 5px;
+}
+
+.like{
+  cursor: -webkit-pointer;
+  cursor: pointer;
+}
+.comment{
+  cursor: pointer;
+}
+.comment-box{
+  background-color: #f5f8ff;
+  padding:0px 10px 0px 10px;
+  height: 500px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.comment-sgl-msg{
+  padding: 5px;
+  background-color: #e8eaee;
+  /* background-color: #a6a6a6bf; */
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+.foot input{
+  width: 210px;
+}
+.modal-card:hover{
+  scale: 1.02;
+}
+.select_card{
+  border: 5px outset rgb(75, 169, 250);   
+  /* color: #2D3E50; */
+  box-shadow: 4px 5px 5px rgb(75, 169, 250);
+  
+}
