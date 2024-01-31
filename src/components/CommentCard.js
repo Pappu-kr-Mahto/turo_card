@@ -38,11 +38,11 @@ const CommentCard = () => {
         }
         return res;
     }
-
+    const host ="https://turo-card-server.onrender.com"
     const [card, setcard] = useState([]);
     useEffect(() => {
         const fetchAllCards = async () => {
-            const response = await fetch(`http://localhost:8000/api/turoCards/comment/${id}`, {
+            const response = await fetch(`${host}/api/turoCards/comment/${id}`, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -109,7 +109,7 @@ const CommentCard = () => {
                                 <h2>{card.title}</h2>
                             </div>
                             <div className='image'>
-                                <img className="card-img-top" src={` http://localhost:8000/media/${card.image}`} alt="..." />
+                                <img className="card-img-top" src={`${host}/media/${card.image}`} alt="..." />
                             </div>
 
                             <div className='desc'>

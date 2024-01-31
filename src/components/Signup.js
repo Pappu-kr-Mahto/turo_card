@@ -16,8 +16,8 @@ const Signup = () => {
 
     const handleSubmit = async (e)=>{
         e.preventDefault();
-
-        const response = await fetch("http://localhost:8000/auth/createUser/",{
+        const host ="https://turo-card-server.onrender.com";
+        const response = await fetch(`${host}/auth/createUser/`,{
             method :"POST",
             headers : {
                 "Content-Type" :"application/json"

@@ -18,8 +18,8 @@ const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        const response = await fetch(`http://localhost:8000/auth/loginUser/`, {
+        const host ="https://turo-card-server.onrender.com"
+        const response = await fetch(`${host}/auth/loginUser/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

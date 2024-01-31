@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import SkeletonCardSelf from './SkeletonCardSelf';
 const SwapRequest = () => {
+    const host ="https://turo-card-server.onrender.com"
     const [sendRequest, setsendRequest] = useState([]);
     const [receivedRequest, setreceivedRequest] = useState([]);
 
     const allSwapRequests = async () => {
-        const response = await fetch(`http://localhost:8000/api/allswaprequests/`, {
+        const response = await fetch(`${host}/api/allswaprequests/`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -23,7 +24,7 @@ const SwapRequest = () => {
 
     const [swapcards, setswapcards] = useState([]);
     const handleViewClick = async (data) => {
-        const response = await fetch(`http://localhost:8000/api/swaprequest/cards/`, {
+        const response = await fetch(`${host}/api/swaprequest/cards/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -41,7 +42,7 @@ const SwapRequest = () => {
     }
 
     const cancelRequest = async (id) => {
-        const response = await fetch(`http://localhost:8000/api/cancelswaprequest/`, {
+        const response = await fetch(`${host}/api/cancelswaprequest/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -56,7 +57,7 @@ const SwapRequest = () => {
     }
 
     const acceptSwapRequest = async (id) =>{
-        const response = await fetch(`http://localhost:8000/api/acceptswaprequest/`, {
+        const response = await fetch(`${host}/api/acceptswaprequest/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

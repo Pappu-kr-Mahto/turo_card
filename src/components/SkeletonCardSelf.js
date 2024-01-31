@@ -3,6 +3,7 @@ import TurocardsContext from './context/turocards/turocardsContext';
 import { Link } from "react-router-dom";
 
 const SkeletonCardSelf = (props) => {
+    const host ="https://turo-card-server.onrender.com"
     const context = useContext(TurocardsContext)
     const { likeStatus, username } = context;
     const { card } = props;
@@ -50,7 +51,7 @@ const SkeletonCardSelf = (props) => {
                     <h2>{card.title}</h2>
                 </div>
                 <div className='image'>
-                    <img className="card-img-top" src={` http://localhost:8000/media/${card.image}`} alt="..." />
+                    <img className="card-img-top" src={`${host}/media/${card.image}`} alt="..." />
                 </div>
 
                 <div className='desc'>
