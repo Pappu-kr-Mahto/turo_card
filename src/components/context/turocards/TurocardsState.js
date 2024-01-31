@@ -10,7 +10,7 @@ const TurocardsState = (props) =>{
     const [username,setUser] = useState("");
 
     // const host="http://localhost:8000";
-    const host ="https://turo-card-server.vercel.app/"
+    const host ="https://turo-card-server.onrender.com"
 
     const fetchAllCards = async () =>{
         const response = await fetch(`${host}/api/turoCards/`,{

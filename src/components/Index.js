@@ -40,6 +40,9 @@ const Index = () => {
           <div className="container mx-4">
             <div className="row justify-content-center" >
               {
+                cards.length<=0 ? <>No Cards are made yet.</>
+                :
+                
                 cards.map((card) => {
                   return (
                     <div className="col-sm-12 col-md-6 col-lg-4 py-3" >
