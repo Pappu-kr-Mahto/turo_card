@@ -1,5 +1,5 @@
 import './App.css';
-import Base from './components/Base'
+// import Base from './components/Base'
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Index from './components/Index';
@@ -26,7 +26,7 @@ function App() {
     <Router> 
       <BaseNav/> 
       <Routes>
-      <Route exact path="/" element={<Base/>}></Route> 
+      <Route exact path="/" element={<Login />} />
       <Route exact path="/login" element={<Login />} />
       <Route exact path="/signup" element={<Signup />} />
       <Route exact path="/templates" element={<Template/>} />  
